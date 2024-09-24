@@ -1,0 +1,31 @@
+.body {
+    background: #000;
+}
+.DisplayAdController.DisplayAdController--active {
+    display: none;
+}
+.region-topBar.region-topBar--rightRail.region-topBar--shouldDropSearchToNextLine.region-topBar--searchT3 {
+    width: 100%;
+    background: #222;
+}
+.Nav.Nav--darkTheme.Nav--standard.Nav--scrolled.Nav--rightRail {
+    background: #222;
+}
+main.region-main.region-main--rightRail {
+    width: 100%;
+    background: #000;
+}
+.MiniBar.MiniBar--show.MiniBar--rightRail.MiniBar--shouldDropSearchToNextLine.MiniBar--searchT3 {
+    width: 100%;
+    background: #333;
+}
+.region-main__content {
+    background: #000;
+}
+.region-bottomBar.region-bottomBar--rightRail {
+    width: 100%;
+    background-color: #111;
+}
+nav.Tuner.Tuner__Audio.Tuner--initialized.Tuner--rightRail {
+    background-color: #111;
+}
