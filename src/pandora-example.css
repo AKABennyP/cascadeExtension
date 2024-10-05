@@ -1,31 +1,106 @@
-.body {
-    background: #000;
+:root {
+    --main-bg-color: #000;
+    --second-bg-color: color-mix(in srgb, var(--main-bg-color), #fff 5%);
+    --third-bg-color: color-mix(in srgb, var(--main-bg-color), #fff 15%);
+    --fourth-bg-color: color-mix(in srgb, var(--main-bg-color), #fff 25%);
 }
-.DisplayAdController.DisplayAdController--active {
+.body {
+    background: var(--main-bg-color);
+}
+.DisplayAdController, .DisplayAdController.DisplayAdController--active {
     display: none;
 }
 .region-topBar.region-topBar--rightRail.region-topBar--shouldDropSearchToNextLine.region-topBar--searchT3 {
     width: 100%;
-    background: #222;
+    background: var(--third-bg-color);
 }
 .Nav.Nav--darkTheme.Nav--standard.Nav--scrolled.Nav--rightRail {
-    background: #222;
+    background: var(--third-bg-color);
 }
 main.region-main.region-main--rightRail {
     width: 100%;
-    background: #000;
+    background: var(--main-bg-color);
 }
 .MiniBar.MiniBar--show.MiniBar--rightRail.MiniBar--shouldDropSearchToNextLine.MiniBar--searchT3 {
     width: 100%;
-    background: #333;
+    background: var(--third-bg-color);
 }
 .region-main__content {
-    background: #000;
+    background: var(--main-bg-color);
 }
 .region-bottomBar.region-bottomBar--rightRail {
     width: 100%;
-    background-color: #111;
+    background-color: var(--second-bg-color);
 }
 nav.Tuner.Tuner__Audio.Tuner--initialized.Tuner--rightRail {
-    background-color: #111;
+    background-color: var(--second-bg-color);
+}
+a.Tuner__Audio__NowPlayingHitArea {
+    background-color: var(--second-bg-color);
+}
+
+----------------------
+
+div#movie_player {
+    height: 100vh;
+}
+
+div#masthead-container {
+    display: none;
+}
+
+ytd-page-manager#page-manager {
+    margin: 0;
+}
+
+ytd-watch-flexy[flexy]:not([full-bleed-player][full-bleed-no-max-width-columns]) #columns.ytd-watch-flexy {
+    display: none;
+}
+
+div#full-bleed-container {
+    max-height: 100vh;
+}
+
+video.video-stream.html5-main-video {
+    height: 100vh !important;
+}
+
+-----------------------
+
+ytd-watch-flexy[flexy]:not([full-bleed-player][full-bleed-no-max-width-columns]) #columns.ytd-watch-flexy {
+    display: none;
+}
+video.video-stream.html5-main-video {
+    height: 90vh !important;
+}
+div#movie_player {
+    height: 114%;
+}
+.html5-video-container {
+    display: flex;
+    justify-content: center;
+}
+
+--------
+:root {
+    --main-bg-color: #000;
+    --second-bg-color: color-mix(in srgb, var(--main-bg-color), #fff 25%);
+    --third-bg-color: color-mix(in srgb, var(--main-bg-color), #fff 15%);
+    --fourth-bg-color: color-mix(in srgb, var(--main-bg-color), #fff 5%);
+}
+* {
+    background-color: var(--main-bg-color);
+    color: #fff;
+}
+*:nth-child(2n) {
+    background-color: var(--second-bg-color);
+    color: #fff;
+}
+*:nth-child(4n) {
+    background-color: var(--third-bg-color);
+    color: #fff;
+}
+*:nth-child(6n) {
+    background-color: var(---fourth-bg-color);
+    color: #fff;
 }
